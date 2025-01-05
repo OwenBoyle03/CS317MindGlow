@@ -1,0 +1,336 @@
+:root {
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    --accent-color: #B2D8D8;
+    --button-color: #89C9C9;
+    --input-bg-color: rgba(255, 255, 255, 0.9);
+    --input-border-color: #CCCCCC;
+    --entry-bg-color: #E6FAFA;
+    --entry-text-color: #333333;
+    --border-radius: 8px;
+    --title-font: 'Playfair Display', serif;
+}
+
+/*
+.header {
+    background-color: #C8EFC7;
+    padding: 10px 0;
+    text-align: center;
+}
+ */
+
+.header {
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    background-color: #C8EFC7;
+    padding: 10px 0;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, var(--background-gradient-start), var(--background-gradient-end));
+}
+
+#journalPage, .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, .text-center {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button, input, textarea, .button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: 1px solid var(--input-border-color);
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+button:active {
+    transform: scale(0.96);
+}
+
+#journalEntry, .input, textarea {
+    width: calc(100% - 20px);
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    resize: none;
+}
+
+#promptBubble {
+    background-color: var(--entry-bg-color);
+    color: var(--entry-text-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#journalPage, button, #promptBubble, #journalEntry {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #journalPage, .container {
+        padding: 10px;
+    }
+
+    button, input, textarea {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #journalEntry {
+        margin-bottom: 10px;
+    }
+}
+
+/* Image and Voice Note Styles */
+#imagePreviewContainer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#imagePreview {
+    border-radius: var(--border-radius);
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+
+/* Entry Image Styles */
+.entry-image {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+.entry-image.enlarged {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+#addImageButton {
+    flex: 1;
+    margin: 0 5px;
+}
+
+
+@media (max-width: 768px) {
+    #addImageButton {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+#homepage h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+#homepage h2 {
+    font-size: 6rem;
+    color: var(--accent-color);
+    text-align: center;
+    margin: 20px 0;
+    animation: pulse 2s infinite;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+p {
+    text-align: center;
+    color: var(--text-color);
+    max-width: 600px;
+    margin: 20px auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Entry Styles */
+.entry {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.entry-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.entry-text {
+    margin-bottom: 10px;
+}
+
+.entry-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Button Styles */
+#goBack {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.entry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.entry-date, .entry-text, .entry-location {
+    margin-bottom: 5px;
+}
+
+.entry-image, .entry-audio {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-icon {
+    display: inline;
+}
+
+.nav-icon img {
+    width: 50px;
+    height: auto;
+}
+
+
+/*.logo {
+    width: 300px;
+    height: auto;
+}
+
+/*
+.logo {
+    display: block; /* if it's not inline */
+/*    margin: auto;
+ /*   height: auto; /* maintain aspect ratio */
+ /*}

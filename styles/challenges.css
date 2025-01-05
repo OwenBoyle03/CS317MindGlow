@@ -1,0 +1,182 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family: serif, "Judson";
+}
+
+.header {
+    background-color: #C8EFC7;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.main-content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-content h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 7.5vw;
+}
+
+h3 {
+    font-size: 6vw;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-icon {
+    display: inline;
+}
+
+.nav-icon img {
+    width: 50px;
+    height: auto;
+}
+
+#challengeOfTheDay {
+    font-family: serif, "Judson";
+    border-radius: 2vw;
+    min-height: 25vw;
+    height: auto;
+    width: 85vw;
+    background-color: #9E8FB7;
+    margin: 0 auto 6vw auto;
+    display: grid;
+    grid-template-columns: 30vw 55vw;
+    border-collapse: collapse;
+}
+
+#challengeCollections {
+    font-family: serif, "Judson";
+    width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 6vw;
+    grid-template-columns: 39.5vw 39.5vw;
+    border-collapse: collapse;
+}
+
+#generalChallenges {
+    font-family: serif, "Judson";
+    width: 85vw;
+    margin: 0 auto;
+    display: none;
+    grid-gap: 0;
+    border-collapse: collapse;
+}
+
+.challenge {
+    margin: 0 0 0 0;
+    font-family: serif, "Judson";
+    border-radius: 2vw;
+    height: 25vw;
+    width: 39.5vw;
+    background-color: #9E8FB7;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#challengeOfTheDayLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-right: 0.5vw solid black;
+    padding: 3vw;
+}
+
+#challengeOfTheDayText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+}
+
+#challengeViewExpanded {
+    font-family: serif, "Judson";
+    border-radius: 2vw;
+    min-height: 25vw;
+    height: auto;
+    width: 85vw;
+    background-color: #9E8FB7;
+    margin: 0 auto 6vw auto;
+    display: grid;
+    border-collapse: collapse;
+}
+
+#BackButton {
+    display: inline-flex;
+    min-height: 5vw;
+    height: auto;
+    width: auto;
+    /*margin: 5vw 0 auto auto;
+    justify-content: right;
+
+     */
+}
+
+#collectionNumberHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5.5vw;
+}
+
+#backButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*
+#challengeOfTheDayLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-right: 0.5vw solid black;
+    padding: 3vw;
+}
+
+#challengeOfTheDayText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5vw;
+}
+ */
+
+#collectionNumberAndBackButton {
+    font-family: serif, "Judson";
+    height: auto;
+    width: 85vw;
+    margin: 0 auto 6vw auto;
+    display: grid;
+    grid-template-columns: 60vw auto;
+}
