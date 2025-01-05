@@ -9,13 +9,13 @@ import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/10.9.
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAH8r1CBDI6PuBSMuG62Vl9Gou2vgrbVM8",
-    authDomain: "mad2-77632.firebaseapp.com",
-    projectId: "mad2-77632",
-    storageBucket: "mad2-77632.appspot.com",
-    messagingSenderId: "672271518614",
-    appId: "1:672271518614:web:4527ec05c64c5e8dfd2bb7",
-    measurementId: "G-V9REP3EC4J"
+    apiKey: "",
+    authDomain: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
 };
 
 // Initialize Firebase
