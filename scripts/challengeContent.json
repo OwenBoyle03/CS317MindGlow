@@ -1,0 +1,21 @@
+{
+  "challengeOfTheDay": ["Deep Breathing Exercises: Inhale deeply for 10 and exhale deeply for 10.","2020-12-12"],
+
+  "challengePack1": [ ["Deep Breathing Exercises: Inhale deeply for 10 and exhale deeply for 10." ],
+                      ["Grounded Breathing: Simply focus on your breathing for a couple of minutes."] ],
+
+  "challengePack2": [ ["Gratitude List: Write down on some paper 5 things you are grateful for." ],
+                      ["Introspection Exercise: Sit down and sort your thoughts, find out how you are feeling." ] ],
+
+  "challengePack3": [ ["Meditation: Sit down, close your eyes and breathe. Focus on the meditation." ],
+                      ["Walking Meditation: Take a walk and really focus on both the walk and your breathing." ] ],
+
+  "challengePack4": [ ["Set Intentions: Set your intentions for the day, making sure to define a clear goal." ],
+                      ["Notice Your Thoughts: Take a moment to listen to your thoughts." ] ],
+
+  "challengePack5": [ ["Body Scan: Scan over your body examining it. Try to feel what your body is telling you." ],
+                      ["Yoga: Be mindful of your own breathing, body and mind by doing some basic yoga." ] ],
+
+  "challengePack6": [ ["Exercise: Do some form of exercise that elevates your heart rate." ],
+                      ["Nature Walk: Find a park or a trail near you and take in the scenery."] ]
+}
